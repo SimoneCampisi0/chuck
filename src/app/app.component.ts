@@ -20,7 +20,8 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    interval(3000).subscribe(() => {
+    this.apiCall()
+    interval(4000).subscribe(() => {
       this.apiCall()
       });
     }
